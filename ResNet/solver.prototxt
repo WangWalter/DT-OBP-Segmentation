@@ -1,0 +1,18 @@
+train_net: "${EXP}/config/${NET_ID}/train_${TRAIN_SET}.prototxt"
+
+
+iter_size: 10
+lr_policy: "poly"
+power: 0.9
+base_lr: 3e-6
+
+average_loss: 20
+display: 10
+max_iter: 80000
+momentum: 0.9
+weight_decay: 0.00005
+
+snapshot: 1000
+snapshot_prefix: "${EXP}/model/${NET_ID}/train"
+type:"Adam"
+solver_mode: GPU
