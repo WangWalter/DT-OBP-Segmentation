@@ -2,13 +2,13 @@
 ## Installation
 ### Requirements
 
-• Python 2.7
-• Linux
-• Cuda 8.0
-• Cudnn 5 (optional)
-• Caffe (follow [here](https://github.com/xmyqsh/deeplab-v2))
-• anaconda (recommend)
-• matio (To use the mat_read_layer and mat_write_layer, please download [here](https://sourceforge.net/projects/matio/files/matio/1.5.2/))
+  - Python 2.7 
+  - Linux
+  - Cuda 8.0
+  - Cudnn 5 (optional)
+  - Caffe (follow [here](https://github.com/xmyqsh/deeplab-v2))
+  - anaconda (recommend)
+  - matio (To use the mat_read_layer and mat_write_layer, please download [here](https://sourceforge.net/projects/matio/files/matio/1.5.2/))
 
 ### caffe (brief compile description)
 ```sh
