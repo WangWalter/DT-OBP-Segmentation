@@ -14,11 +14,11 @@ python_code/run_segtest.py : 跑測試網路，網路定義在deploy.prototxt
 
 Training 
 設定run_pascal.sh裡的參數 (RUN_TRAIN:設為1、MODEL:init model，不設定的話即隨機初始化參數)
-$ sh run_pascal.sh
+ $ sh run_pascal.sh
 
 Testing 
 設定run_pascal.sh裡的參數 (RUN_TRAIN:設為1、MODEL:init model，不設定的話即隨機初始化參數)
-$ sh run_pascal.sh
+ $ sh run_pascal.sh
 
 Testing (python)
 run_segtest.py
