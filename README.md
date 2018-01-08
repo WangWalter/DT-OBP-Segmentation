@@ -48,9 +48,9 @@ $ sh run_pascal.sh
 ### Caffe Testing 
 setting run_pascal.sh (RUN_TRAIN = 1、MODEL = {testing model})
 ```sh
->$ sh run_pascal.sh
+$ sh run_pascal.sh
 ```
 ### Testing (python)
 ```sh
->$ python run_segtest.py
+$ python run_segtest.py
 ```
