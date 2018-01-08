@@ -1,22 +1,23 @@
 "# DT-OBP-Segmentation" 
-Deeplab/voc12/config /{network}/ train.prototxt :caffe °V½m¥Î¡A©w¸qtraining layers­Y¶·§ï°Êdataset¡A­×§ïdata layerªº{root_folder}¤Î{sourse}¡A{root_folder}¬°dataset¦ì¸m¡A{sourse}¬°¸ô®|+txt file¡A¦¹txt®æ¦¡¬°(¨C¦æ¬°¼v¹³¦WºÙ¤Î¹ïÀ³label¡A°Ñ¦ÒDeeplab/voc12/list/train.txt)
+codeè§£èªª
+run_pascal.sh : è¨­å®š{NUM_LABELS}åŠcaffe command è¨­å®š
+python_code/train.prototxt :
+caffe è¨“ç·´ç”¨ï¼Œå®šç¾©training layersè‹¥é ˆæ”¹å‹•datasetï¼Œä¿®æ”¹data layerçš„{root_folder}åŠ{sourse}ï¼Œ{root_folder}ç‚ºdatasetä½ç½®ï¼Œ{sourse}ç‚ºè·¯å¾‘+txt fileï¼Œæ­¤txtæ ¼å¼ç‚º(æ¯è¡Œç‚ºå½±åƒåç¨±åŠå°æ‡‰labelï¼Œåƒè€ƒDeeplab/voc12/list/train.txt)
+python_code/test.prototxt : 
+caffe æ¸¬è©¦ç”¨ï¼Œå®šç¾©testing layersï¼Œè‹¥é ˆæ”¹å‹•æ¸¬è©¦datasetï¼Œä¿®æ”¹data layerçš„{root_folder}åŠ{sourse}ï¼Œ{root_folder}ç‚ºdatasetä½ç½®ï¼Œ{sourse}ç‚ºè·¯å¾‘+txt fileï¼Œæ­¤txtæ ¼å¼ç‚º(æ¯è¡Œç‚ºå½±åƒåç¨±ï¼Œåƒè€ƒDeeplab/voc12/list/test.txt)
 
-Deeplab/voc12/config /{network}/test.prototxt : caffe ´ú¸Õ¥Î¡A©w¸qtesting layers¡A­Y¶·§ï°Ê´ú¸Õdataset¡A­×§ïdata layerªº{root_folder}¤Î{sourse}¡A{root_folder}¬°dataset¦ì¸m¡A{sourse}¬°¸ô®|+txt file¡A¦¹txt®æ¦¡¬°(¨C¦æ¬°¼v¹³¦WºÙ¡A°Ñ¦ÒDeeplab/voc12/list/test.txt)
+python_code/solver.prototxt :è¨­å®šç¶²è·¯åŸºæœ¬åƒæ•¸
+python_code/deploy.prototxt : matlabã€pythonæ¸¬è©¦ç”¨ï¼Œå®šç¾©testing layers
 
-Deeplab/voc12/config /{network}/solver.prototxt :³]©w°ò¥»°Ñ¼Æ
-Deeplab/voc12/config /{network}/deploy.prototxt : matlab¡Bpython´ú¸Õ¥Î¡A©w¸qtesting layers
-Deeplab/voc12/model /{network}/: modelÀx¦s¦ì¸m¡A¦ì¸m¤Îscreenshot¥Ñsolver.prototxt³]©w
-
-Deeplab/run_pascal.sh : ³]©w{NUM_LABELS}¤Îcaffe command ³]©w
-
-Deeplab/voc12/python: copy_net.py(½Æ»spretraind model ªº°Ñ¼Æ¦Ü·s©w¸q¬[ºc)¡Brun_segtest.py(¶]´ú¸Õºô¸ô¡Aºô¸ô©w¸q¦bdeploy.prototxt)
+python_code/copy_net.py : è¤‡è£½pretraind model çš„åƒæ•¸è‡³æ–°å®šç¾©æ¶æ§‹
+python_code/run_segtest.py : è·‘æ¸¬è©¦ç¶²è·¯ï¼Œç¶²è·¯å®šç¾©åœ¨deploy.prototxt
 
 Training 
-³]©wrun_pascal.sh¸Ìªº°Ñ¼Æ (RUN_TRAIN:³]¬°1¡BMODEL:init model¡A¤£³]©wªº¸Ü§YÀH¾÷ªì©l¤Æ°Ñ¼Æ)
+è¨­å®šrun_pascal.shè£¡çš„åƒæ•¸ (RUN_TRAIN:è¨­ç‚º1ã€MODEL:init modelï¼Œä¸è¨­å®šçš„è©±å³éš¨æ©Ÿåˆå§‹åŒ–åƒæ•¸)
 $ sh run_pascal.sh
 
 Testing 
-³]©wrun_pascal.sh¸Ìªº°Ñ¼Æ (RUN_TRAIN:³]¬°1¡BMODEL:init model¡A¤£³]©wªº¸Ü§YÀH¾÷ªì©l¤Æ°Ñ¼Æ)
+è¨­å®šrun_pascal.shè£¡çš„åƒæ•¸ (RUN_TRAIN:è¨­ç‚º1ã€MODEL:init modelï¼Œä¸è¨­å®šçš„è©±å³éš¨æ©Ÿåˆå§‹åŒ–åƒæ•¸)
 $ sh run_pascal.sh
 
 Testing (python)
