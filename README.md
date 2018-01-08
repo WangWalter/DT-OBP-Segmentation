@@ -1,4 +1,9 @@
 # DT-OBP-Segmentation 
+
+## Introduction
+proposed architecture improves the DT-EdgeNet (Domain Transform with EdgeNet)[1]. Here, we combined the OBG-FCN [2] mask 
+network and replaced the [1] edge network. The used mask network can predict background, object, and object edge reference diagrams. In addition, our architecture uses multi-scale ResNet-101 as the base network and introduces multi-scale Atrous Convolution to architecture training to preserve the dimensions of the feature map, which increases the receptive and further to enhance the accuracy of semantic segmentation. 
+
 ## Installation
 ### Requirements
 
@@ -24,6 +29,11 @@
 
 6. $make install
 ```
+
+### model
+trained model can be download:
+[Deeplabev2](https://drive.google.com/open?id=1BNBlWfQ9dtiJMdD360y5GGId_Eag7w5o) reference(https://bitbucket.org/aquariusjay/deeplab-public-ver2)
+[Proposed model](https://drive.google.com/open?id=1IjNv1qADPg40ZoqvkTOWeDChHhho3AKR)
 
 ### code 
 >run_pascal.sh : setting {NUM_LABELS} and caffe command 
@@ -54,3 +64,8 @@ $ sh run_pascal.sh
 ```sh
 $ python run_segtest.py
 ```
+
+## Reference
+
+[1] L. Chen, J. Barron, G. Papandreou, K. Murphy, and A. Yuille, “Semantic image segmentation with task-specific edge detection using CNNs and a discriminatively trained domain transform,” arXiv preprint arXiv:1511.03328, 2015. 
+[2] Q. Huang, C. Xia, W. Zheng, Y. Song, H. Xu, and C. C. J. Kuo, “Object Boundary Guided Semantic Segmentation” arXiv preprint arXiv:1603.09742, 2016. 
