@@ -1,8 +1,8 @@
 # DT-OBP-Segmentation 
 
 ## Introduction
-proposed architecture improves the DT-EdgeNet (Domain Transform with EdgeNet)[2]. Here, we combined the OBG-FCN [1] mask 
-network and replaced the [2] edge network. The used mask network can predict background, object, and object edge reference diagrams. In addition, our architecture uses multi-scale ResNet-101 as the base network and introduces multi-scale Atrous Convolution to architecture training to preserve the dimensions of the feature map, which increases the receptive and further to enhance the accuracy of semantic segmentation. 
+proposed architecture improves the DT-EdgeNet (Domain Transform with EdgeNet)[1]. Here, we combined the OBG-FCN [2] mask 
+network and replaced the [1] edge network. The used mask network can predict background, object, and object edge reference diagrams. In addition, our architecture uses multi-scale ResNet-101 as the base network and introduces multi-scale Atrous Convolution to architecture training to preserve the dimensions of the feature map, which increases the receptive and further to enhance the accuracy of semantic segmentation. 
 
 ## Installation
 ### Requirements
@@ -67,8 +67,10 @@ $ python run_segtest.py
 ```
 
 ## Reference
-[1] Q. Huang, C. Xia, W. Zheng, Y. Song, H. Xu, and C. C. J. Kuo, “Object Boundary Guided Semantic Segmentation” arXiv preprint arXiv:1603.09742, 2016. 
+[1] L. Chen, J. Barron, G. Papandreou, K. Murphy, and A. Yuille, “Semantic image segmentation with task-specific edge detection using CNNs and a discriminatively trained domain transform,” arXiv preprint arXiv:1511.03328, 2015. 
 
-[2] L. Chen, J. Barron, G. Papandreou, K. Murphy, and A. Yuille, “Semantic image segmentation with task-specific edge detection using CNNs and a discriminatively trained domain transform,” arXiv preprint arXiv:1511.03328, 2015. 
+[2] Q. Huang, C. Xia, W. Zheng, Y. Song, H. Xu, and C. C. J. Kuo, “Object Boundary Guided Semantic Segmentation” arXiv preprint arXiv:1603.09742, 2016. 
+
+
 
 
