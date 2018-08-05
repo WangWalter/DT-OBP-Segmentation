@@ -32,7 +32,9 @@ network and replaced the [1] edge network. The used mask network can predict bac
 
 ### model
 trained model can be download:
+
 [Deeplabev2](https://drive.google.com/open?id=1BNBlWfQ9dtiJMdD360y5GGId_Eag7w5o) reference(https://bitbucket.org/aquariusjay/deeplab-public-ver2)
+
 [Proposed model](https://drive.google.com/open?id=1IjNv1qADPg40ZoqvkTOWeDChHhho3AKR)
 
 ### code 
